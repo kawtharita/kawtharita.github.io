@@ -1,0 +1,164 @@
+body {
+  background: #f6fff7;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(120deg, #e0f7fa 60%, #fff 100%);
+  padding: 2em 1em 1em 1em;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 14px #0001;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.panda-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.panda-face {
+  position: relative;
+  width: 120px;
+  height: 110px;
+  background: #fff;
+  border-radius: 60% 60% 55% 55% / 55% 55% 60% 60%;
+  margin: 0 auto;
+  box-shadow: 0 4px 14px #0002;
+}
+
+.panda-ear {
+  position: absolute;
+  top: -24px;
+  width: 42px;
+  height: 42px;
+  background: #232323;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.panda-ear.left { left: -22px; }
+.panda-ear.right { right: -22px; }
+
+.panda-eye {
+  position: absolute;
+  width: 32px;
+  height: 36px;
+  background: #232323;
+  border-radius: 50%;
+  top: 30px;
+}
+
+.panda-eye.left { left: 12px; }
+.panda-eye.right { right: 12px; }
+
+.panda-eye-ball {
+  position: absolute;
+  background: #fff;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  top: 13px;
+  left: 8px;
+  transition: transform 0.1s;
+}
+
+.panda-nose {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 14px;
+  background: #232323;
+  border-radius: 50% 50% 70% 70%;
+}
+
+.panda-mouth {
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  width: 28px;
+  height: 14px;
+  margin-left: -14px;
+  border-bottom: 3px solid #232323;
+  border-radius: 0 0 20px 20px;
+}
+
+h1 {
+  font-size: 2.4em;
+  margin-bottom: 0.2em;
+  letter-spacing: 2px;
+}
+
+nav {
+  margin: 1em 0 0.2em 0;
+}
+
+nav a {
+  color: #388e3c;
+  background: #fff;
+  padding: 0.4em 1em;
+  border-radius: 20px;
+  margin: 0 0.4em;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #0001;
+}
+nav a:hover {
+  background: #388e3c;
+  color: #fff;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+section {
+  margin-bottom: 2.5em;
+  background: #fff;
+  padding: 1.6em 1.2em;
+  border-radius: 30px;
+  box-shadow: 0 2px 12px #0001;
+}
+
+h2 {
+  color: #388e3c;
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 1.1em;
+}
+
+.panda-emoji {
+  font-size: 2em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.4em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0 0.4em 0;
+  font-size: 0.95em;
+  color: #888;
+  background: none;
+}
+
+@media (max-width: 600px) {
+  .panda-face { width: 90px; height: 85px; }
+  .panda-ear { width: 30px; height: 30px; top: -16px; }
+  .panda-eye { width: 22px; height: 24px; top: 20px; }
+  .panda-eye-ball { width: 8px; height: 8px; top: 8px; left: 6px; }
+  .panda-nose { width: 12px; height: 8px; top: 44px; }
+  .panda-mouth { width: 16px; height: 7px; top: 54px; margin-left: -8px; }
+  section { padding: 1em 0.4em; border-radius: 18px; }
+}
